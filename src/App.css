@@ -1,0 +1,16 @@
+.product-cards{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,00);
+    flex-wrap: wrap;
+}
+button{
+    cursor: pointer;
+    background-color: rgb(0, 255, 191);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

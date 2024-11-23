@@ -1,0 +1,35 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 200px;
+    padding: 16px;
+    margin: 16px;
+    background-color: rgb(255, 159, 250);
+    transition: background-color 0.3s;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 150px;
+    background-color: aquamarine;
+    object-fit: cover;
+}
+
+.product-card.favorited {   
+    border: 2px solid rgb(255, 54, 54);
+    background-color: rgba(251, 255, 7, 0.6) ;
+}
+.product-card ul{
+    position: absolute;
+    list-style-type: none;
+    z-index: 1000;
+}
+.fav-icon{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+}
