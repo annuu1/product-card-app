@@ -32,10 +32,24 @@ const App = () => {
          setProducts(newProducts);
         }
 
+        function showOnlyFav(){
+            let newProducts = products.filter((product =>{
+                return product.isFavorited;
+            }))
+            setProducts(newProducts);
+        }
+        function removeFavs(){
+            let newProducts = products.map((product)=>{
+                return {...product, isFavorited: false}
+            })
+            setProducts(newProducts);
+        }
+
     return (
         <div className="App">
             <h1>Product Card Application</h1>
-            <button onClick={() => toggleFav(4)}>Count : {products[0].isFavorited ? products[0].price : "0"}</button>
+            <button onClick={()=> showOnlyFav()} style={{ marginRight: '20px', marginBottom: '20px'}}>Show Favourite</button>
+            <button onClick={()=> removeFavs()} style={{ marginRight: '20px', marginBottom: '20px' }}>Remove All Favourite</button>
             <div className="product-cards">
                 {
                     products.map((product) => {

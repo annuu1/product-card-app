@@ -17,7 +17,7 @@ const ProductCard = (product) => {
         </button>
         {
           product.isExpanded && (
-            <ul>
+            <ul className="features">
               <li>Feature 1</li>
               <li>Feature 2</li>
               <li>Feature 3</li>
